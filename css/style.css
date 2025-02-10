@@ -1,0 +1,132 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: aqua;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+    position: relative;
+    padding: 15px;
+}
+
+.fream {
+    width: 80%;
+    max-width: 400px;
+    height: 22px;
+    border: 2px solid white;
+    background-color: rgb(104, 101, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.light {
+    width: 90%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: rgb(184, 187, 190);
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.lightOn {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px white, 0 0 30px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.6), 0 0 80px rgba(255, 255, 255, 0.4);
+}
+
+.bord {
+    width: 60%;
+    max-width: 300px;
+    height: 120px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.plugs {
+    width: 90%;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.switch {
+    width: 30px;
+    height: 60px;
+    background-color: black;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: maroon;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot.active {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .row {
+        height: 120px;
+    }
+    .fream {
+        width: 90%;
+    }
+    .bord {
+        width: 80%;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fream {
+        width: 95%;
+    }
+    .light {
+        width: 100%;
+    }
+    .bord {
+        width: 90%;
+    }
+    .plugs {
+        flex-wrap: wrap;
+    }
+    .switch {
+        width: 25px;
+        height: 50px;
+    }
+}

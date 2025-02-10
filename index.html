@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="fream">
+                <div class="light" id="light">
+
+                </div>
+            </div>
+        </div>
+        <div class="bord">
+            <div class="plugs">
+                <button class="switch" id="switch-1">
+                    <div class="dot" id="dot"></div>
+                </button>
+                <button class="switch" id="switch-2">
+                    <div class="dot" id="dot"></div>
+                </button>
+                <button class="switch" id="switch-3">
+                    <div class="dot" id="dot"></div>
+                </button>
+                <button class="switch" id="switch-4">
+                    <div class="dot" id="dot"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const light = document.getElementById('light');
+        const dot = document.getElementById('dot')
+        const switch1 = document.getElementById('switch-1')
+        const switch2 = document.getElementById('switch-2')
+        const switch3 = document.getElementById('switch-3')
+        const switch4 = document.getElementById('switch-4')
+
+        switch1.addEventListener('click', () => {
+            light.classList.toggle('lightOn')
+            dot.classList.toggle('active')
+        })
+
+
+    </script>
+</body>
+
+</html>
