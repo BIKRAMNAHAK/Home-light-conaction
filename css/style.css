@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .container {
     width: 100%;
     max-width: 1400px;
@@ -42,6 +43,20 @@
     background-color: rgb(184, 187, 190);
     position: absolute;
     transition: all 0.3s ease-in-out;
+}
+
+.light2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    left: 10%;
+}
+
+.light2On {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px white, 0 0 30px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.6), 0 0 80px rgba(255, 255, 255, 0.4);
 }
 
 .lightOn {

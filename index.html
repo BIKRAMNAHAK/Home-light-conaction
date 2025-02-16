@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="wall">
 
 
     <div class="container">
@@ -18,6 +18,10 @@
 
                 </div>
             </div>
+
+            <div class="light2" id="light2">
+
+            </div>
         </div>
         <div class="bord">
             <div class="plugs">
@@ -25,7 +29,7 @@
                     <div class="dot" id="dot"></div>
                 </button>
                 <button class="switch" id="switch-2">
-                    <div class="dot" id="dot"></div>
+                    <div class="dot" id="dot2"></div>
                 </button>
                 <button class="switch" id="switch-3">
                     <div class="dot" id="dot"></div>
@@ -41,16 +45,22 @@
     <script>
         const light = document.getElementById('light');
         const dot = document.getElementById('dot')
+        const dot2 = document.getElementById('dot2')
         const switch1 = document.getElementById('switch-1')
         const switch2 = document.getElementById('switch-2')
         const switch3 = document.getElementById('switch-3')
         const switch4 = document.getElementById('switch-4')
+        const light2 = document.getElementById('light2')
 
         switch1.addEventListener('click', () => {
             light.classList.toggle('lightOn')
             dot.classList.toggle('active')
         })
 
+        switch2.addEventListener('click',()=>{
+            light2.classList.toggle('light2On')
+            dot2.classList.toggle('active')
+        })
 
     </script>
 </body>
