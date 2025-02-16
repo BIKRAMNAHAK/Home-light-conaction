@@ -125,9 +125,11 @@
         width: 80%;
         height: 100px;
     }
+
+    
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .fream {
         width: 95%;
     }
@@ -143,5 +145,15 @@
     .switch {
         width: 25px;
         height: 50px;
+    }
+
+    .light2{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: blueviolet;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
     }
 }
